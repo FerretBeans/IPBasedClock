@@ -8,7 +8,7 @@ fetch("https://api.ipify.org?format=json")
             console.log(json)
             setInterval(() => {
                 const dd = new Date();
-                const timezone = dd.toUTCString("en-US", {timeZone: `${json.timezone}`});
+                const timezone = dd.toLocaleString({timeZone: `${json.timezone}`});
                 const ht = dd.getHours();
                 const mt = dd.getMinutes();
                 const st = dd.getSeconds();
