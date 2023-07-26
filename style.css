@@ -8,10 +8,13 @@ p {
     color: #fff;
 }
 
-#time {
+#flex {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 64px;
+}
+
+#time {
+    font-size: 128px;
 }
