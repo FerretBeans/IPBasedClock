@@ -12,7 +12,7 @@ fetch("https://api.ipify.org?format=json")
                 const ht = dd.getHours();
                 const mt = dd.getMinutes();
                 const st = dd.getSeconds();
-                document.getElementById("time").innerHTML = timezone.replace("GMT", "");
+                document.getElementById("time").innerHTML = timezone.replace(",", "");
                 document.getElementsByTagName("title")[0].textContent = ("0" + ht).substr(-2) + ":" + ("0" + mt).substr(-2) + ":" + ("0" + st).substr(-2);
             }, 1);
         });
