@@ -2,7 +2,7 @@ fetch("https://api.ipify.org?format=json")
     .then(res => res.json())
     .then(json => {
         console.log(json.ip)
-        fetch("http://ip-api.com/json/" + json.ip + "?fields=183103")
+        fetch("https://ip-api.com/json/" + json.ip + "?fields=183103")
         .then(res => res.json())
         .then(json => {
             console.log(json)
